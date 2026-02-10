@@ -1,0 +1,45 @@
+[package]
+name = "wbh"
+version = "0.1.0"
+edition = "2021"
+description = "A WebDAV file manager built with GPUI"
+
+[dependencies]
+gpui = "0.2"
+gpui-component = "0.5"
+gpui-component-assets = "0.5"
+
+# Error handling
+anyhow = "1"
+
+# Serialization
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# WebDAV / HTTP
+ureq = "2"
+quick-xml = "0.37"
+base64 = "0.22"
+percent-encoding = "2"
+url = "2"
+
+# Date/Time
+chrono = { version = "0.4", features = ["serde"] }
+
+# File utils
+mime_guess = "2"
+dirs = "6"
+uuid = { version = "1", features = ["v4"] }
+
+# Local storage / cache
+redb = "2"
+
+# Secrets
+keyring = "3"
+
+# Async bridge
+smol = "2"
+
+# Logging
+log = "0.4"
+env_logger = "0.11"
